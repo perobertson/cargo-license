@@ -1,6 +1,8 @@
+pub use cargo_metadata::MetadataCommand;
+
 use anyhow::Result;
 use cargo_metadata::{
-    CrateType, DepKindInfo, DependencyKind, Metadata, MetadataCommand, Node, NodeDep, Package,
+    CrateType, DepKindInfo, DependencyKind, Metadata, Node, NodeDep, Package,
     PackageId,
 };
 use itertools::Itertools;
